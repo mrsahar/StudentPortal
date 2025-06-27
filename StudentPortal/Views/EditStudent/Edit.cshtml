@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+@model StudentPortal.Models.Enitity.Student;
+<div class="container mt-5">
+    <h2 class="mb-4">Add Student</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">id</label>
+            <input type="text" class="form-control" id="name" asp-for="Id" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your full name" asp-for="Name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" asp-for="Email">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" placeholder="+92-300-1234567" asp-for="Phone">
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+
